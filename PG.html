@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="PG.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator & Manager</h1>
+
+    <div class="section">
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="generatePassword()">Generate & Save Password</button>
+      <p id="generatedPassword"></p>
+    </div>
+
+    <div class="section">
+      <input type="text" id="recallUsername" placeholder="Enter name to recall password" />
+      <button onclick="recallPassword()">Recall Password</button>
+      <p id="recalledPassword"></p>
+      <input type="file">
+    </div>
+  </div>
+
+  <script src="PG.js"></script>
+</body>
+</html>
